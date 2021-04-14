@@ -4,12 +4,43 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    clockShow:false,
+    clockHeight:0,
+    time:'10',
+    mTime:300000,
+    timeStr:'05:00',
+    rate:'',
+    timer:null,
+    cateArr:[
+      {
+        icon: 'work',
+        text: '工作'
+      },
+      {
+        icon: 'study',
+        text: '学习'
+      },
+      {
+        icon: 'think',
+        text: '思考'
+      },
+      {
+        icon: 'write',
+        text: '写作'
+      },
+      {
+        icon: 'sport',
+        text: '运动'
+      },
+      {
+        icon: 'read',
+        text: '阅读'
+      }
+    ],
+    cateActive:'0',
+    okShow:false,
+    pauseShow:true,
+    continueCancelShow:false
   },
   // 事件处理函数
   bindViewTap() {
