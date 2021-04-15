@@ -5,9 +5,26 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#E7624F",
+    "navigationBarTitleText": "weixin",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "selectedColor": "#666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "计时",
+        "iconPath":"./images/jishi2.png",
+        "selectedIconPath":"./images/jishi.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "统计",
+        "iconPath": "./images/tongji2.png",
+        "selectedIconPath": "./images/tongji.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
